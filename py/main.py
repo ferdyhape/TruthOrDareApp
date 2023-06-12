@@ -203,15 +203,26 @@ dare_actions = [
 def main():
     st.title("Truth or Dare App")
     st.write("Click the button below to get a random Truth and Dare question.")
+    # Ask random truth or dare questions
     columns = st.columns(8)
+    asked_questions = []
+    asked_actions = []
 
     if columns[0].button("Truth"):
-        question = random.choice(truth_questions)
-        st.success(f"Truth: {question}")
+        if len(asked_questions) == len(truth_questions):
+            st.warning("Congratulations! You have completed all the truth questions.")
+        else:
+            question = random.choice(list(set(truth_questions) - set(asked_questions)))
+            asked_questions.append(question)
+            st.success(f"Truth: {question}")
 
     if columns[1].button("Dare"):
-        action = random.choice(dare_actions)
-        st.success(f"Dare: {action}")
+        if len(asked_actions) == len(dare_actions):
+            st.warning("Congratulations! You have completed all the dare actions.")
+        else:
+            action = random.choice(list(set(dare_actions) - set(asked_actions)))
+            asked_actions.append(action)
+            st.success(f"Dare: {action}")
 
 if __name__ == "__main__":
     main()
