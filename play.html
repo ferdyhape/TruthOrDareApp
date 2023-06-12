@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Online TOD Game</title>
+    <link href="/assets/css/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -53,58 +54,38 @@
               </svg>
             </button>
           </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >About Creator <span aria-hidden="true"></span
-            ></a>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
+            <a
+              href="https://github.com/ferdyhape"
+              target="_blank"
+              class="text-2xl text-gray-900 hover:text-gray-600"
+              title="My GitHub"
+            >
+              <i class="fa-brands fa-github"></i
+              ><span aria-hidden="true"></span>
+            </a>
+
+            <a
+              href="https://id.linkedin.com/in/ferdy-hahan-pradana"
+              target="_blank"
+              class="text-2xl text-gray-900 hover:text-gray-600"
+              title="My LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i
+              ><span aria-hidden="true"></span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/ferdyhape"
+              target="_blank"
+              class="text-2xl text-gray-900 hover:text-gray-600"
+              title="My Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i
+              ><span aria-hidden="true"></span>
+            </a>
           </div>
         </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
-          <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-          >
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="assets/BlackLogo.png" alt="" />
-              </a>
-              <button
-                type="button"
-                class="-m-2.5 rounded-md p-2.5 text-gray-700"
-              >
-                <span class="sr-only">Close menu</span>
-                <svg
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="py-6">
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >About Creator</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </header>
       <div class="relative isolate px-6 lg:px-8">
         <!-- background -->
@@ -137,7 +118,7 @@
           ></div>
         </div>
         <div class="flex justify-center items-center h-screen">
-          <div class="max-w-2xl py-32 sm:py-48 lg:py-44">
+          <div class="max-w-2xl py-32 sm:py-48 lg:py-40">
             <div
               class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
             >
