@@ -1,101 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online TOD Game</title>
-    <link href="/assets/css/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </head>
-  <body>
-    <div class="bg-white">
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav
-          class="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5 flex content-start gap-5">
-              <img class="h-8 w-auto" src="assets/img/BlackLogo.png" alt="" />
-              <p class="font-semibold text-xl my-auto">FERDYHAPE</p>
-            </a>
-          </div>
-          <div class="flex lg:hidden">
-            <button
-              type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded p-2.5 text-gray-700"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
-            <a
-              href="https://github.com/ferdyhape"
-              target="_blank"
-              class="text-2xl text-gray-900 hover:text-gray-600"
-              title="My GitHub"
-            >
-              <i class="fa-brands fa-github"></i
-              ><span aria-hidden="true"></span>
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online TOD Game</title>
+  <link href="/assets/css/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-            <a
-              href="https://id.linkedin.com/in/ferdy-hahan-pradana"
-              target="_blank"
-              class="text-2xl text-gray-900 hover:text-gray-600"
-              title="My LinkedIn"
-            >
-              <i class="fa-brands fa-linkedin"></i
-              ><span aria-hidden="true"></span>
-            </a>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
 
-            <a
-              href="https://www.instagram.com/ferdyhape"
-              target="_blank"
-              class="text-2xl text-gray-900 hover:text-gray-600"
-              title="My Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i
-              ><span aria-hidden="true"></span>
-            </a>
-          </div>
-        </nav>
-      </header>
-      <div class="relative isolate px-6 lg:px-8">
-        <!-- background -->
+<body>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5 flex content-start gap-5">
+            <img class="h-8 w-auto" src="assets/img/BlackLogo.png" alt="" />
+            <p class="font-semibold text-xl my-auto">FERDYHAPE</p>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
+          <a href="https://github.com/ferdyhape" target="_blank" class="text-2xl text-gray-900 hover:text-gray-600"
+            title="My GitHub">
+            <i class="fa-brands fa-github"></i><span aria-hidden="true"></span>
+          </a>
+
+          <a href="https://id.linkedin.com/in/ferdy-hahan-pradana" target="_blank"
+            class="text-2xl text-gray-900 hover:text-gray-600" title="My LinkedIn">
+            <i class="fa-brands fa-linkedin"></i><span aria-hidden="true"></span>
+          </a>
+
+          <a href="https://www.instagram.com/ferdyhape" target="_blank"
+            class="text-2xl text-gray-900 hover:text-gray-600" title="My Instagram">
+            <i class="fa-brands fa-instagram"></i><span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="relative isolate px-6 lg:px-8">
+      <!-- background -->
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true">
         <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
               clip-path: polygon(
                 74.1% 44.1%,
                 100% 61.6%,
@@ -114,224 +76,137 @@
                 76.1% 97.7%,
                 74.1% 44.1%
               );
-            "
-          ></div>
-        </div>
-        <div class="flex justify-center items-center h-screen">
-          <div class="max-w-2xl py-32 sm:py-48 lg:py-40">
-            <div
-              class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-            >
-              <div class="grid gap-4">
-                <a href="#">
-                  <h5
-                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                  >
-                    Oke, Now Lets Play!
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  you have 1 minute to complete the challenge, answer as
-                  honestly as possible and as quickly as possible!
-                </p>
-                <div class="flex content-start">
-                  <button
-                    type="button"
-                    class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 dark:bg-gray-800 dark:text-neutral-50 dark:border-gray-600 dark:hover:text-neutral-400 dark:hover:bg-gray-700"
-                    onclick="displayQuestion('truth')"
-                  >
-                    Truth
-                  </button>
-                  <button
-                    type="button"
-                    class="dark:bg-white dark:text-dark white:bg-gray-800 hover:bg-gray-900 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-400 dark:border-gray-700 dark:hover:text-slate-900"
-                    onclick="displayQuestion('dare')"
-                  >
-                    Dare
-                  </button>
-                </div>
+            "></div>
+      </div>
+      <div class="flex justify-center items-center h-screen">
+        <div class="max-w-2xl py-32 sm:py-48 lg:py-40">
+          <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="grid gap-4">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  Oke, Now Lets Play!
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                you have 1 minute to complete the challenge, answer as
+                honestly as possible and as quickly as possible!
+              </p>
+              <div class="flex content-start">
+                <button type="button"
+                  class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 dark:bg-gray-800 dark:text-neutral-50 dark:border-gray-600 dark:hover:text-neutral-400 dark:hover:bg-gray-700"
+                  onclick="displayQuestion('truth')">
+                  Truth
+                </button>
+                <button type="button"
+                  class="dark:bg-white dark:text-dark white:bg-gray-800 hover:bg-gray-900 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-400 dark:border-gray-700 dark:hover:text-slate-900"
+                  onclick="displayQuestion('dare')">
+                  Dare
+                </button>
               </div>
             </div>
-            <a
-              href="index.html"
-              type="button"
-              class="w-full text-center font-medium border border-gray-800 bg-gray-800 dark:hover:border dark:hover:border-black dark:text-slate-100 dark:hover:bg-transparent dark:hover:text-black my-5 py-2 rounded-full text-semibold"
-              >Back
-            </a>
           </div>
+          <a href="index.html" type="button"
+            class="w-full text-center font-medium border border-gray-800 bg-gray-800 dark:hover:border dark:hover:border-black dark:text-slate-100 dark:hover:bg-transparent dark:hover:text-black my-5 py-2 rounded-full text-semibold">Back
+          </a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 
-  <script>
-    const truthQuestions = [
-      "Apa kamu pernah selingkuh?",
-      "Apa kamu selingkuh sekarang?",
-      "Kapan terakhir kali kamu bohong sama aku?",
-      "Maukah kau meninggalkanku demi perempuan yang lebih baik daripada aku? Apa alasannya?",
-      "Apakah kamu naksir seseorang di tempat kerja?",
-      "Jika aku meninggal, berapa lama kamu akan menunggu untuk mendapatkan pasangan baru?",
-      "Pernah bohongi aku nggak? Kalau pernah, bohong tentang apa?",
-      "Apakah kamu menyimpan rahasia dariku? Apa itu?",
-      "Apakah kamu menerimaku apa adanya?",
-      "Jika ternyata aku memiliki kekurangan yang jauh dari ekspektasimu, bagaimana cara kamu menyikapinya?",
-      "Jawab jujur, apakah kamu pernah merasa bosan menjalani hubungan denganku?",
-      "Apa yang akan kamu lakukan jika salah satu dari kita mengalami fase jenuh di dalam hubungan ini?",
-      "Bagaimana jika kelak kita diharuskan untuk menjalin hubungan jarak jauh?",
-      "Bagaimana responsmu, ketika aku didekati oleh laki-laki atau perempuan lain?",
-      "Kalau mantanku mendekatiku lagi, apa yang akan kamu lakukan?",
-      "Jika ternyata aku bukan jodohmu, bagaimana tanggapanmu?",
-      "Sampai kapan kamu akan mencintaiku?",
-      "Jika kelak aku tertimpa musibah dan mengalami kerugian yang berarti, apa yang akan kamu lakukan?",
-      "Punya celebrity crush? Siapa?",
-      "Biasanya siapa yang kamu stalking di Instagram?",
-      "Apa love language kamu?",
-      "Hal apa yang dapat membuatmu merasa anxiety?",
-      "Situasi apa yang membuat kamu bahagia?",
-      "Sesuatu atau tindakan buruk apa yang pernah kamu lakukan?",
-      "Apa kebiasaan burukmu dari lahir?",
-      "Pernah bohong ke orangtua? Kalau pernah, tentang apa?",
-      "Hubungan siapa yang kamu kagumi dan mengapa?",
-      "Bagaimana cara kamu menenangkan diri?",
-      "Apa hal tergila yang pernah kamu lakukan?",
-      "Apa saja fakta memalukan tentang dirimu?",
-      "Kapan terakhir menangis? Kenapa?",
-      "Apa ketakutan terbesarmu?",
-      "Apa aib yang kamu sembunyikan dari aku?",
-      "Bagaimana cara kamu menyelesaikan masalah?",
-      "Apa penyesalan terbesarmu?",
-      "Apa pendapat kamu mengenai hubungan yang sehat?",
-      "Apa saja hal yang kamu anggap penting?",
-      "Sikap seperti apa yang membuatmu merasa diperlakukan dengan spesial?",
-      "Apa saja hal-hal kecil yang bisa membuatmu kesal?",
-      "Apa kegiatan paling menantang yang ingin kamu lakukan, namun belum sempat terwujud?",
-      "Pernah cemburu berat? Apa yang bikin kamu cemburu?",
-      "Apa nama aku yang kamu simpan di kontak ponselmu?",
-      "Apa kamu puas dengan hubungan kita saat ini?",
-      "Apa hal paling berat dalam menjalani hubungan denganku?",
-      "Apakah kamu mau jadi pasanganku selamanya? Apa rencana masa depanmu denganku?",
-      "Bagaimana perasaanmu jika sedang bersama denganku?",
-      "Apa pendapat kamu tentang pernikahan?",
-      "Apa yang ingin kamu wujudkan dari hubungan kita?",
-      "Bagaimana kesan pertamamu padaku?",
-      "Menurut kamu aku ini orangnya seperti apa?",
-      "Menurut kamu apa kekurangan aku?",
-      "Apa bukti kalau kamu memang sayang sama aku?",
-      "Kamu nggak pernah capek kan jalanin hubungan ini? Apa alasannya?",
-      "Pernah kesal dengan aku, tapi kamu memilih bungkam nggak? Kalau ada tentang apa?",
-      "Apakah ada aspek hubungan kita yang perlu diperbaiki?",
-      "Kebiasaan atau sikapku yang paling menyebalkan menurutmu?",
-      "Apa hal yang paling kamu sukai tentang aku?",
-      "Apa yang membuat kamu bertahan dengan aku?",
-      "Apa pendapat kamu tentang poliamori?",
-      "Pasangan seperti apa yang kamu idamkan sebagai pendamping hidupmu?",
+<script>
+  // tolong anukke
+
+  // udah bisa ? gabisa tombolnya
+
+  let truthQuestions = [];
+  let dareActions = [];
+
+  function readJSONFile(file) {
+    return fetch(file).then(response => response.json()).catch(error => {
+      console.error('Error:', error)
+    });
+  }
+
+  readJSONFile('data/data.json').then(data => {
+    truthQuestions = data.truth_questions;
+    dareActions = data.dare_actions;
+  });
+
+  const askedQuestions = [];
+  const askedActions = [];
+
+  function getRandomQuestion(questions, asked) {
+    const availableQuestions = questions.filter(
+      (question) => !asked.includes(question)
+    );
+    return availableQuestions[
+      Math.floor(Math.random() * availableQuestions.length)
     ];
+  }
 
-    const dareActions = [
-      "Capture dan kirim baris chat Whatsapp teratas kamu",
-      "Capture dan kirim baris chat direct message Instagram teratas kamu",
-      "Posting foto aku di media sosial",
-      "Posting di media sosial dan bilang bahwa kamu sudah putus denganku",
-      "Telepon seorang teman dan minta mereka berbohong tentang keberadaanmu kepadaku",
-      "Bilang kepada sahabat lawan jenismu kalau kamu menyukainya",
-      "Telepon seorang teman, lalu tanyakan apakah kamu pernah membohongiku?",
-      "Telepon sahabat terdekat, lalu tanyakan apakah kamu pernah berselingkuh?",
-      "Telepon sahabat terdekat, lalu tanyakan apakah ada orang lain yang kamu sukai?",
-      "Tunjukkan riwayat akun yang kamu stalk di Instagram",
-      "Posting foto memalukan diri sendiri di media sosial",
-      "Tirukan salah satu orangtua kamu",
-      "Kirim foto memalukan kamu ke orangtua dan keluarga",
-      "Tirukan artis favorit kamu",
-      "Buat adegan lucu dari film",
-      "Melambai ke orang asing dan berpura-pura bahwa kamu mengenalnya",
-      "Berjalan ke orang asing dan lakukan hal konyol di depan mereka",
-      "Lakukan tarian lucu pada orang asing di sekitarmu",
-      "Telepon seorang teman dan teriaki mereka tanpa alasan",
-      "Ucapkan sayang kepadaku dengan suara yang keras",
-      "Nyanyikan lagu romantis",
-      "Nyanyikan lagu dengan namaku",
-      "Lakukan hal untuk membuktikan rasa cintamu padaku",
-      "Sentuh bagian wajah aku yang menurutmu paling menarik",
-      "Baca halaman buku dengan gaya romantis",
-      "Buat dan bacakan puisi romantis",
-      "Berikan 10 pujian untukku",
-      'Ucapkan "I love you" sambil menjawab 10 kali',
-      "Sebutkan 5 tentang diriku dengan jujur",
-    ];
-
-    const askedQuestions = [];
-    const askedActions = [];
-
-    function getRandomQuestion(questions, asked) {
-      const availableQuestions = questions.filter(
-        (question) => !asked.includes(question)
-      );
-      return availableQuestions[
-        Math.floor(Math.random() * availableQuestions.length)
-      ];
-    }
-
-    function displayQuestion(type) {
-      if (type === "truth") {
-        if (askedQuestions.length === truthQuestions.length) {
-          Swal.fire({
-            icon: "success",
-            title: "Congratulations!",
-            text: "You have answered the whole truth",
-            showConfirmButton: false,
-            timerProgressBar: true, // enable timer progress bar
-            timer: 1500,
-            customClass: {
-              // add CSS class for timer progress bar
-              timer: "animate__animated animate__fadeIn animate__delay-1s",
-            },
-          });
-        } else {
-          const question = getRandomQuestion(truthQuestions, askedQuestions);
-          askedQuestions.push(question);
-          Swal.fire({
-            icon: "question",
-            title: question,
-            showConfirmButton: false,
-            timerProgressBar: true, // enable timer progress bar
-            timer: 60000,
-            customClass: {
-              // add CSS class for timer progress bar
-              timer: "animate__animated animate__fadeIn animate__delay-1s",
-            },
-          });
-        }
-      } else if (type === "dare") {
-        if (askedActions.length === dareActions.length) {
-          Swal.fire({
-            icon: "success",
-            title: "Congratulations!",
-            text: "You have completed all the dare actions.",
-            showConfirmButton: false,
-            timerProgressBar: true, // enable timer progress bar
-            timer: 1500,
-            customClass: {
-              // add CSS class for timer progress bar
-              timer: "animate__animated animate__fadeIn animate__delay-1s",
-            },
-          });
-        } else {
-          const action = getRandomQuestion(dareActions, askedActions);
-          askedActions.push(action);
-          Swal.fire({
-            icon: "warning",
-            title: action,
-            showConfirmButton: false,
-            timerProgressBar: true, // enable timer progress bar
-            timer: 60000,
-            customClass: {
-              // add CSS class for timer progress bar
-              timer: "animate__animated animate__fadeIn animate__delay-1s",
-            },
-          });
-        }
+  function displayQuestion(type) {
+    if (type === "truth") {
+      if (askedQuestions.length === truthQuestions.length) {
+        Swal.fire({
+          icon: "success",
+          title: "Congratulations!",
+          text: "You have answered the whole truth",
+          showConfirmButton: false,
+          timerProgressBar: true, // enable timer progress bar
+          timer: 1500,
+          customClass: {
+            // add CSS class for timer progress bar
+            timer: "animate__animated animate__fadeIn animate__delay-1s",
+          },
+        });
+      } else {
+        const question = getRandomQuestion(truthQuestions, askedQuestions);
+        askedQuestions.push(question);
+        Swal.fire({
+          icon: "question",
+          title: question,
+          showConfirmButton: false,
+          timerProgressBar: true, // enable timer progress bar
+          timer: 60000,
+          customClass: {
+            // add CSS class for timer progress bar
+            timer: "animate__animated animate__fadeIn animate__delay-1s",
+          },
+        });
+      }
+    } else if (type === "dare") {
+      if (askedActions.length === dareActions.length) {
+        Swal.fire({
+          icon: "success",
+          title: "Congratulations!",
+          text: "You have completed all the dare actions.",
+          showConfirmButton: false,
+          timerProgressBar: true, // enable timer progress bar
+          timer: 1500,
+          customClass: {
+            // add CSS class for timer progress bar
+            timer: "animate__animated animate__fadeIn animate__delay-1s",
+          },
+        });
+      } else {
+        const action = getRandomQuestion(dareActions, askedActions);
+        askedActions.push(action);
+        Swal.fire({
+          icon: "warning",
+          title: action,
+          showConfirmButton: false,
+          timerProgressBar: true, // enable timer progress bar
+          timer: 60000,
+          customClass: {
+            // add CSS class for timer progress bar
+            timer: "animate__animated animate__fadeIn animate__delay-1s",
+          },
+        });
       }
     }
-  </script>
+  }
+</script>
+
 </html>
